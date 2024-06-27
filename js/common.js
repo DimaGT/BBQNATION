@@ -1972,7 +1972,7 @@ Function Shortcodes
 		}
 		
 		if( $('.has-hover-image').length > 0 ){
-			
+			console.log('jkejesj');
 			var parent_row = $('.has-hover-image').closest('.content-row');
 			parent_row.css("z-index", "10");
 			
