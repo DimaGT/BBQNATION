@@ -646,7 +646,7 @@
 		font-size: 18px;
 		font-family: 'basis_grotesque_promedium', sans-serif;
 		font-weight:500;
-		line-height:26px;
+		line-height:52px;
 		margin-bottom:0px;
 		width: 100%;
 		z-index: 10;		
@@ -1235,7 +1235,7 @@
 			display: none;
 		}
 		.has-hover-image  {
-			font-size: 90px !important;
+			font-size: 40px !important;
 		}
 	.hero-below-caption .hero-translate, .hero-below-caption #hero.has-image #hero-caption {
 
@@ -1341,3 +1341,40 @@
 		
 }			
 	
+.beers_buddy {
+	color: #ff0000;
+	font-size: 54px;
+	text-align: center;
+	margin-bottom: 64px;
+	animation: colorchange 7s infinite;
+	font-family: 'rancho';
+}
+
+@keyframes colorchange {
+	0% {
+	  color: #ff0000;
+	}
+
+	33% {
+	  color: #ffffff;
+	}
+	66% {
+	  color: #0000ff;
+	}
+	100% {
+	  color: #ff0000;
+	}
+  }
+
+  @keyframes scaling {
+	0% {
+	  transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+  }

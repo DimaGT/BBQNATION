@@ -3540,6 +3540,7 @@ let anim_12 = document.querySelector('.gif_22');
 let anim_13 = document.querySelector('.gif_18');
 let anim_14 = document.querySelector('.gif_20');
 let anim_15 = document.querySelector('.gif_24');
+let anim_55 = document.querySelector('.gif_5');
 let trigger_1 = document.querySelector('.two_fifth');
 let trigger_2 = document.querySelector('.gifs_wrapper');
 let trigger_3 = document.querySelector('.eagle-container');
@@ -3610,6 +3611,19 @@ gsap.to(anim_6, {
 	rotate: -80,
 	scale: 1.2
 });
+gsap.to(anim_55, {
+    scrollTrigger: {
+        trigger: trigger_2,
+        start: 'bottom center',
+        
+		scrub: true,
+        end: 'bottom top',
+    },
+    translateY: 300,
+	rotate: -200,
+	scale: 1.2
+});
+
 gsap.to(anim_7, {
     scrollTrigger: {
         trigger: trigger_2,

@@ -12,18 +12,31 @@ Primary use:	Showcase Portfolio
 
 
 @font-face {
-    font-family: 'basis_grotesque_proregular';
+    font-family: 'defaultFont';
     src: url('webfonts/font.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'basis_grotesque_proregular';
+    src: url('webfonts/Cowboys.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:'basis_grotesque_promedium';
-    src: url('webfonts/font.woff2') format('woff2');
+    src: url('webfonts/Cowboys.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family:'rancho';
+    src: url('webfonts/Rancho-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*------------------------------------------------------------------
 
 01. General Styles
@@ -832,6 +845,8 @@ Primary use:	Showcase Portfolio
 		margin-right: calc(50% - 50vw)!important;
 		max-width: 1000%!important;
 		width: 100vw!important;
+		position: relative;
+		z-index: 9999;
 	}
 	
 	.light-section-container, .dark-section-container {
@@ -1581,7 +1596,7 @@ Primary use:	Showcase Portfolio
 		font-weight:500;
 		position: relative;
 		display:block;
-		font-size:9vw;
+		font-size:5vw;
 		line-height:13vw;
 		height:13vw;
 		color:#fff;
@@ -1606,7 +1621,7 @@ Primary use:	Showcase Portfolio
 	
 		
 	header {
-		width:100px;
+		width:180px;
 		height:100%;
 		right:0;
 		top:0;
@@ -1771,7 +1786,7 @@ Primary use:	Showcase Portfolio
 			padding:0 0;
 			padding-bottom:20px;
 			padding-top:20px;
-			width: 100px;
+			width: 180px;
 		}
 		
 		.classic-menu .menu-timeline {
@@ -3138,7 +3153,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	header {
-    	width: 110px; 
+    	width: 180px; 
 	}
 	
 	#header-container {
@@ -3235,7 +3250,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	header {
-		width:100px;
+		width:180px;
 	}
 	
 	#header-container {
@@ -3492,9 +3507,28 @@ Primary use:	Showcase Portfolio
 	
 }
 
-
+.gif-item {
+	max-width: 300px;
+	position: absolute;
+}
 @media only screen and (max-width: 767px) {	
-	
+	header {
+		width: 100%;
+	}
+	#header-container {
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+	.gif-item {
+		max-width: 200px;
+		position: absolute;
+	}
+	.gif_18 {
+		max-width: 150px;
+	}
+	.gif_7_container {
+		display: none;
+	}
 	h1.big-title {
 		font-size: 12vw;
 		line-height: 14vw;
@@ -3529,7 +3563,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	h5{
-		font-size:16px;
+		font-size:18px;
 		line-height: 26px;
 		margin-left:-1px;
 	}
@@ -3690,7 +3724,7 @@ Primary use:	Showcase Portfolio
 	
 	.uppercase-text .flexnav > li > a {
 		text-transform:uppercase;
-		line-height:calc(1rem + 7vw);		
+		line-height:calc(1rem + 12vw);		
 	}
 	
 	#footer-container {
@@ -3931,10 +3965,7 @@ Primary use:	Showcase Portfolio
 	min-height: 550px;
 }
 
-.gif-item {
-	max-width: 300px;
-	position: absolute;
-}
+
 
 .gif_1 {
 	left: 0;
@@ -3959,7 +3990,7 @@ Primary use:	Showcase Portfolio
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	top: 140px;
+	top: 180px;
 }
 .gif_6 {
 	right: 8%;
