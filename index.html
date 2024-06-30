@@ -82,27 +82,22 @@
                             <div class="outer">
                                 <div class="inner">
                                     <ul data-breakpoint="1025" class="flexnav">
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition"
-                                                href="#">
+                                        <li class="link menu-timeline"><a class="ajax-link" href="#">
                                                 <div class="before-span"><span data-hover="Home">Home</span></div>
                                             </a></li><br />
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition"
-                                                href="#">
+                                        <li class="link menu-timeline"><a class="ajax-link" href="#">
                                                 <div class="before-span"><span data-hover="Telegram">Telegram</span>
                                                 </div>
                                             </a></li>
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition"
-                                                href="#">
+                                        <li class="link menu-timeline"><a class="ajax-link" href="#">
                                                 <div class="before-span"><span data-hover="Tweeter">Tweeter</span></div>
                                             </a></li>
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition"
-                                                href="#">
+                                        <li class="link menu-timeline"><a class="ajax-link" href="#">
                                                 <div class="before-span"><span data-hover="Buy on Jupiter">Buy on
                                                         Jupiter
                                                     </span></div>
                                             </a></li>
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition"
-                                                href="#">
+                                        <li class="link menu-timeline"><a class="ajax-link" href="#">
                                                 <div class="before-span"><span data-hover="Chart">Chart</span></div>
                                             </a></li>
                                     </ul>
@@ -150,8 +145,8 @@
                             <div class="page-nav-wrap">
                                 <div class="page-nav-caption content-full-width block-title marquee-title">
                                     <div class="inner">
-                                        <a class="page-title next-ajax-link-page" data-type="page-transition"
-                                            data-firstline="BBQ" data-secondline="NATION" href="#">
+                                        <a class="page-title next-ajax-link-page" data-firstline="BBQ"
+                                            data-secondline="NATION" href="#">
                                             <div class="next-hero-title-wrapper">
                                                 <div class="next-hero-title"><span>BBQ</span> <span>NATION</span>
                                                     <span style='padding-top: 20px;'>🍔</span>
@@ -176,7 +171,7 @@
                             <!-- Row -->
                             <div
                                 class="content-row row_padding_left row_padding_right full dark-section fadeout-element">
-                                <div>
+                                <div id='contentBeers'>
                                     <div class='beers_buddy'>
                                         “Beers, Burgers, and Babes, Buddy!”
                                     </div>
@@ -192,7 +187,7 @@
                                 </div>
 
 
-                                <div class='gifs-wrapper'>
+                                <div class='gifs-wrapper' id='gifs'>
                                     <h1 class="text-align-center"
                                         style='position: relative; z-index: 99; font-size: 7rem; font-weight: 300;'>
                                         <span class="has-hover-image hide-ball animBlick"
@@ -280,7 +275,7 @@
                 </div>
                 <!--/Main -->
                 <div class="copyright"
-                    style='font-family: defaultFont; color: #fff; max-width: 650px; line-height: 18px; margin-top: 16px; margin-bottom: 32px;'>
+                    style='font-family: defaultFont; color: #fff; max-width: 750px; line-height: 18px; margin-top: 16px; margin-bottom: 32px;'>
                     Legal Disclaimer: $BBQNATION is a meme coin with no intrinsic value or expectation of
                     financial return. $BBQNATION is completely useless, valueless, and for entertainment
                     purposes only. If/When you purchase or trade for $BBQNATION, you are agreeing that you
@@ -396,6 +391,16 @@
             button.innerText = 'Error';
         });
     }
+    var player = document.getElementById('player');
+    var trigger1 = document.getElementById('page-nav');
+    var trigger2 = document.getElementById('contentBeers');
+    var trigger3 = document.getElementById('gifs');
+
+
+    document?.body?.addEventListener('mouseenter', () => player.play())
+    trigger1.addEventListener('mouseenter', () => player.play())
+    trigger2.addEventListener('mouseenter', () => player.play())
+    trigger3.addEventListener('mouseenter', () => player.play()) 
 </script>
 
 </html>
